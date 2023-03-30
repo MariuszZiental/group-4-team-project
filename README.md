@@ -1,4 +1,4 @@
-# parcel-project-template
+# group-4-team-project
 
 ## Zalezności
 
