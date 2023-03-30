@@ -1,10 +1,14 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+/*---   partials   ---*/
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './partials/header';
-@import './partials/button';
-
-
+@import './sass/partials/_variables';
+@import './sass/partials/_globals';
+@import './sass/partials/_header';
+@import './sass/partials/_menu-mobile';
+@import './sass/partials/_hero';
+@import './sass/partials/_contact-us-thank-you';
+@import './sass/partials/_about';
+@import './sass/partials/_store';
+@import './sass/partials/_delivery';
+@import './sass/partials/_blog';
+@import './sass/partials/_follow-to-our-newsletter';
+@import './sass/partials/_footer';
