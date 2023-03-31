@@ -11,13 +11,18 @@
       crossorigin="anonymous"
     />
 
-    <!-- czcionki -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- W taki sposbu dodajemy fragmenty w główny HTML-plik strony. -->
     <include src="./partials/header.html"></include>
     <include src="./partials/menu-mobile.html"></include>
     <include src="./partials/hero.html"></include>
+    <include src="./partials/headings.html"></include>
     <include src="./partials/contact-us-thank-you.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/store.html"></include>
@@ -26,7 +31,6 @@
     <include src="./partials/follow-to-our-newsletter.html"></include>
     <include src="./partials/footer.html"></include>
 
-    <!-- Skrypt jest na samym dole kodu. On juz ma w sobie podłączony SAAS plik. -->
     <script src="./index.js" type="module"></script>
   </body>
 </html>
