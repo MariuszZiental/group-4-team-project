@@ -84,7 +84,6 @@ section {
 .container {
   width: 100%;
   margin: 0 auto;
-  width: 288px;
 }
 
 /*---   headings   ---*/
@@ -197,6 +196,7 @@ button {
   font-weight: 500;
   line-height: 24px;
   outline: none;
+  border: 0;
   border-radius: $button-border-radius;
   color: $main-font-white;
   background-color: $button-pink-base;
