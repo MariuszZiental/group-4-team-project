@@ -194,6 +194,8 @@ h5 {
 button {
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: $button-border-radius;
+  color: $main-font-white;
   background-color: $button-pink-base;
   @extend %transition;
   &:hover {
