@@ -115,13 +115,7 @@ h2 {
   line-height: 29px;
   padding-left: 0 auto;
 }
-h2:after {
-  content: '';
-  display: block;
-  flex: 1 1;
-  border-bottom: 1px solid $section-straight-lines;
-  margin: 0 auto;
-}
+
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   h2 {
     font-size: 44px;
@@ -200,8 +194,8 @@ h5 {
 button {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 38px;
   background-color: $button-pink-base;
+  @extend %transition;
   &:hover {
     background-color: $button-pink-hover;
   }
@@ -229,7 +223,7 @@ input {
   padding-bottom: 10px;
   font-size: 12px;
   line-height: 14.63px;
-  border-radius: 4px;
+  border-radius: $input-border-radius;
   margin: 0 auto;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {

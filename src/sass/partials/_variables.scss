@@ -13,12 +13,10 @@ $button-pink-base: #e86f54;
 $button-pink-hover: #e25b41;
 $button-pink-focus: #fa6f54;
 
-
 $input-normal-state: #111111;
 $input-hover-state: #666464;
 $input-error-color: #e74a3b;
 $input-accept-color: #3cbc81;
-
 
 /*---   Breakpoints   ---*/
 
@@ -37,7 +35,6 @@ $footer-top-padding-desktop: 72px;
 $footer-bottom-padding-mobile: 32px;
 $footer-bottom-padding-tablet: 54px;
 $footer-bottom-padding-desktop: 72px;
-
 
 /*---   Section spaces   ---*/
 
@@ -61,4 +58,6 @@ $grid-gap-desktop: 32px;
 
 /*---   Border-radius   ---*/
 
-$button-
+$button-border-radius: 38px;
+$button-modal-border-radius: 8px;
+$input-border-radius: 4px;
