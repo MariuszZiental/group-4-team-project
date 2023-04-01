@@ -113,7 +113,9 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
+  padding-left: 0 auto;
 }
+
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   h2 {
     font-size: 44px;
@@ -190,5 +192,56 @@ h5 {
 /*---   buttons   ---*/
 
 button {
-  border-radius: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  outline: none;
+  border-radius: $button-border-radius;
+  color: $main-font-white;
+  background-color: $button-pink-base;
+  @extend %transition;
+  &:hover {
+    background-color: $button-pink-hover;
+  }
+  &:focus {
+    background-color: $button-pink-focus;
+  }
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+/*---   inputs  ---*/
+
+input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 14.63px;
+  border-radius: $input-border-radius;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
