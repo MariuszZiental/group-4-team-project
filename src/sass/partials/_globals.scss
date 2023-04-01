@@ -117,8 +117,8 @@ h2 {
 }
 h2:after {
   content: '';
-  display: inline-block;
-  flex: 1;
+  display: block;
+  flex: 1 1;
   border-bottom: 1px solid $section-straight-lines;
   margin: 0 auto;
 }
@@ -200,7 +200,7 @@ h5 {
 button {
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 50%;
+  border-radius: 38px;
   background-color: $button-pink-base;
   &:hover {
     background-color: $button-pink-hover;
@@ -219,5 +219,30 @@ button {
   button {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+
+/*---   inputs  ---*/
+
+input {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 12px;
+  line-height: 14.63px;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  input {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  input {
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
