@@ -117,10 +117,10 @@ h2 {
 }
 h2:after {
   content: '';
-  display: inline;
+  display: inline-block;
   flex: 1;
   border-bottom: 1px solid $section-straight-lines;
-  margin: auto;
+  margin: 0 auto;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   h2 {
@@ -198,5 +198,26 @@ h5 {
 /*---   buttons   ---*/
 
 button {
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-radius: 50%;
+  background-color: $button-pink-base;
+  &:hover {
+    background-color: $button-pink-hover;
+  }
+  &:focus {
+    background-color: $button-pink-focus;
+  }
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
 }
