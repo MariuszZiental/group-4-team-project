@@ -1,0 +1,148 @@
+.footer {
+  background-color: $footer-background;
+  color: $main-font-white;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+}
+
+.footer__list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  @media screen and (max-width: 767px) {
+    padding: 0;
+    padding-left: 16px;
+    padding-right: 14px;
+  }
+}
+
+.footer__head {
+  font-family: 'Inter';
+  font-weight: 700;
+  line-height: 1.2;
+
+  @media screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    font-size: 20px;
+  }
+}
+
+.footer__time {
+  margin-top: 0;
+}
+
+.footer__list-item {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: $main-font-white;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: flex;
+  }
+}
+
+.footer__icon {
+  stroke: white;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    padding-left: 46px;
+    margin-top: 0;
+    position: absolute;
+    top: 80px;
+    right: 40px;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    position: absolute;
+    top: 95px;
+    right: 48px;
+  }
+}
+.footer__list-icon {
+  list-style-type: none;
+
+  @media screen and (max-width: 767px) {
+    display: flex;
+    gap: 14px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+.footer__icon-item {
+  width: 28px;
+  height: 28px;
+}
+
+.footer__icon-logo {
+  stroke: $main-font-white;
+  fill: $main-font-white;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    margin-left: 24px;
+    margin-top: 25px;
+  }
+}
+
+.footer__main-section {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding-left: 210px;
+    display: flex;
+    gap: 96px;
+  }
+}
+
+.link {
+  @media screen and (max-width: 767px) {
+    display: block;
+  }
+}
