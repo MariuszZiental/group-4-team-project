@@ -117,8 +117,8 @@ h2 {
 }
 h2:after {
   content: '';
-  display: block;
-  flex: 1 1;
+  display: inline;
+  flex: 1;
   border-bottom: 1px solid $section-straight-lines;
   margin: auto;
 }
