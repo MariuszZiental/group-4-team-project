@@ -115,6 +115,10 @@ h2 {
   line-height: 29px;
   padding-left: 0 auto;
 }
+h2:after {
+  content: '';
+  
+}
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   h2 {
     font-size: 44px;
