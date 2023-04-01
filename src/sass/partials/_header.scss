@@ -1,0 +1,88 @@
+/*globals*/
+
+ul {
+  padding-left: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: initial;
+}
+header {
+  font-family: 'Montserrat';
+  font-size: 20px;
+}
+
+.icon-logo {
+  display: block;
+  width: 45px;
+  height: 35px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: 72px;
+    height: 57px;
+  }
+}
+
+.container__header {
+  align-items: center;
+  size: 20px;
+  display: flex;
+  height: 35px;
+  justify-content: space-between;
+  padding: 16px 16px 0 16px;
+  & > a {
+    width: 22px;
+    display: none;
+    @media screen and (min-width: $tablet-breakpoint) {
+      display: inline-block;
+    }
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    height: 57px;
+    padding: 24px 24px 0 24px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding-top: 28px;
+  }
+}
+
+/*navbar desktop*/
+
+.container__navbar--desktop {
+  display: none;
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: flex;
+  }
+}
+.navbar__list {
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+  @media screen and (min-width: $tablet-breakpoint) {
+    margin: 0;
+    display: flex;
+    gap: 24px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    gap: 48px;
+  }
+}
+
+/*navbar mobile*/
+.container__navbar--mobile {
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+.contact__header--mobile {
+  width: 20px;
+  margin-right: 14px;
+}
+.js-open-menu {
+  border: none;
+  width: 24px;
+  background-color: white;
+  padding: 0;
+}
