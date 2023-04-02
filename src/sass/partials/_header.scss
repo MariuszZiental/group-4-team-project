@@ -1,5 +1,4 @@
 /*globals*/
-
 ul {
   padding-left: 0;
 }
@@ -22,6 +21,7 @@ a {
 }
 
 .container__header {
+  font-family: 'Montserrat';
   align-items: center;
   size: 20px;
   display: flex;
@@ -47,6 +47,7 @@ a {
 /*navbar desktop*/
 
 .container__navbar--desktop {
+  font-size: 20px;
   display: none;
   @media screen and (min-width: $tablet-breakpoint) {
     display: flex;
@@ -85,22 +86,4 @@ a {
   &:focus {
     background-color: white;
   }
-}
-
-h1 {
-  display: flex;
-  flex-direction: row;
-}
-h1:before,
-h1:after {
-  content: '';
-  flex: 1 1;
-  border-bottom: 12px solid;
-  margin: auto;
-}
-h1:before {
-  margin-right: 10px;
-}
-h1:after {
-  margin-left: 10px;
 }

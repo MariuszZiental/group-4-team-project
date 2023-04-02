@@ -23,7 +23,12 @@
             <use href="images/svg/sprite.svg#icon-telephone-mobile"></use>
           </svg>
         </a>
-        <button type="button" class="toggleMenu js-open-menu">
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg viewBox="0 0 100 100">
             <use href="images/svg/sprite.svg#icon-burger-menu"></use>
           </svg>
@@ -38,10 +43,10 @@
   </div>
 </header>
 
-<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container js-menu-container menu-toggle" id="mobile-menu">
   <ul class="menu--mobile">
     <li>
-      <button type="button" class="js-close-menu">
+      <button type="button" class="js-close-menu menu-toggle">
         <svg class="icon-close--mobile" viewBox="0 0 100 100">
           <use href="images/svg/sprite.svg#icon-close"></use>
         </svg>
