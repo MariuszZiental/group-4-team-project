@@ -112,7 +112,7 @@ h2 {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  padding-left: 0 auto;
+  padding-left: 0;
 }
 
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
@@ -148,7 +148,7 @@ h3 {
   }
 }
 
-/*---   text in secion store   ---*/
+/*---   text in section store   ---*/
 
 h4 {
   font-weight: 500;
@@ -168,7 +168,7 @@ h4 {
   }
 }
 
-/*---   text in secion delivery   ---*/
+/*---   text in section delivery   ---*/
 
 h5 {
   font-weight: 500;

@@ -14,54 +14,6 @@
 
 /*-- header --*/
 
-.delivery-heading {
-  display: inline-flex;
-}
-
-/*--.delivery-heading > .line {
-  border-radius: 1px;
-  background-color: black;
-  height: 1;
-}--*/
-
-.line {
-  width: 80%;
-  height: 1px;
-  background-color: black;
-  margin: 6px;
-}
-
-h2 {
-  display: inline-block;
-  margin-block-end: 0;
-  margin-block-start: 0;
-}
-
-/*--h2::after {
-  content: '';
-  position: absolute;
-  top: 51%;
-  height: 1px;
-  background-color: black;
-  width: 380px;
-  margin-left: 14px;
-}--*/
-
-/*--
-@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
-  h2::after {
-    width: 570px;
-  }
-}
-
-@media (min-width: $desktop-breakpoint) {
-  h2::after {
-    width: 1080px;
-  }
-}--*/
-
-/*-- text list --*/
-
 .delivery-list {
   display: flex;
   flex-direction: column;
@@ -71,17 +23,29 @@ h2 {
   margin-block-start: 0;
   margin-block-end: 0;
 
+  @media (min-width: $mobile-breakpoint) and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-top: 32px;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
   @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 60px;
+    padding-left: 96px;
   }
   @media (min-width: $desktop-breakpoint) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-top: 80px;
+    padding-left: 96px;
   }
 }
 
@@ -91,7 +55,7 @@ h2 {
   align-items: center;
   margin-bottom: 14px;
   gap: 8px;
-  font-family: 'Montserrata', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: $main-font-black;
