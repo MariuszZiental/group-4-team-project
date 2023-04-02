@@ -34,6 +34,14 @@
 
 <symbol id="icon-burger-menu" viewBox="0 0 36 32"><path d="M0 0h36v4H0V0zm12 14h24v4H12v-4zM0 28h36v4H0v-4z"/></symbol>
 
+<symbol id="icon-arow-right-tablet-desktop" viewBox="0 0 215 32"><path d="m188.87 5.458 10.482 7.128L0 12.592v5.577l198.103-.006-9.874 5.675 2.778 4.835 22.724-13.056L192.008.846l-3.137 4.612z"/></symbol>
+
+<symbol id="icon-arow-left-tablet-desktop" viewBox="0 0 215 32"><path d="m25.987 25.301-10.482-7.128 199.352-.006V12.59l-198.103.006 9.874-5.675-2.777-4.835L1.127 15.142 22.85 29.913l3.137-4.612z"/></symbol>
+
+<symbol id="icon-arow-right-mobile" viewBox="0 0 208 32"><path d="m180.613 5.918 10.024 6.816L0 12.739v5.333l189.443-.005L180 23.494l2.656 4.624 21.731-12.485-20.773-14.125-3 4.411z"/></symbol>
+
+<symbol id="icon-arow-left-mobile" viewBox="0 0 208 32"><path d="m26.861 24.895-10.024-6.816 190.638-.005v-5.333l-189.443.005 9.443-5.427-2.656-4.624L3.088 15.18l20.773 14.125 3-4.411z"/></symbol>
+
 </defs>
 
 </svg>
