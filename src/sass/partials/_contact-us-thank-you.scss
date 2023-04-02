@@ -1,0 +1,267 @@
+@media screen and (min-width: 240px) {
+  .backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($main-font-black, $alpha: 0.1);
+  }
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+    width: 90%;
+    max-width: 272px;
+    height: 357px;
+    background-color: $main-font-white;
+    display: flex;
+    flex-direction: column;
+    padding-left: 16px;
+    padding-bottom: 28px;
+    display: flex;
+    &__close-btn {
+      position: absolute;
+      top: 19px;
+      right: 19px;
+      cursor: pointer;
+      fill: $main-font-black;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      fill: $main-font-black;
+    }
+    &__first {
+      width: 90%;
+      height: 90%;
+    }
+    &__first-header {
+      position: absolute;
+      top: 28px;
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-top: 0;
+    }
+    &__contact-form {
+      position: absolute;
+      top: 130px;
+      width: 90%;
+      margin-top: 0;
+      &__item {
+        margin-bottom: 0;
+      }
+      &__label {
+        font-size: 12px;
+        color: rgba(92, 92, 92, 1);
+        margin-bottom: 8px;
+        margin-top: 0px;
+      }
+      &_box {
+        position: relative;
+        width: 98%;
+        height: 35px;
+        font-size: 12px;
+        line-height: 1.22;
+        padding-left: 12px;
+        margin-bottom: 20px;
+        color: $main-font-black;
+        border: 1px solid rgba(215, 215, 215, 1);
+        border-radius: 4px;
+        margin-top: 0px;
+        &:active {
+          border: 1px solid rgba(17, 17, 17, 0.7);
+        }
+        &:valid {
+          border: 1px solid;
+          border: 1px solid rgba(60, 188, 129, 1);
+
+          ~ .modal__contact-form_box__valid {
+            visibility: visible;
+          }
+        }
+        &__valid {
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          fill: rgba(60, 188, 129, 1);
+          visibility: hidden;
+          transform: translate(-25px, 8px);
+        }
+        &__invalid {
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          fill: rgba(231, 74, 59, 1);
+          visibility: hidden;
+          transform: translate(-25px, 8px);
+        }
+        &:invalid {
+          border: 1px solid rgba(231, 74, 59, 1);
+
+          ~ .modal__contact-form_box__invalid {
+            visibility: visible;
+          }
+        }
+      }
+      &__item {
+        margin-bottom: 0px;
+        margin-top: 0;
+      }
+      &__btn {
+        justify-content: center;
+        width: 100%;
+        height: 37px;
+        margin-top: 0px;
+        background-color: $button-pink-base;
+        border-radius: 8px;
+        border: none;
+        font-weight: 600;
+        color: $main-font-white;
+        cursor: pointer;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: rgba(232, 111, 84, 1);
+        }
+      }
+    }
+    &__text {
+      justify-content: center;
+      position: absolute;
+      display: flex;
+      color: rgba(92, 92, 92, 1);
+      margin-bottom: 0px;
+      font-size: 12px;
+      line-height: 1.22;
+      top: 50px;
+      width: 90%;
+    }
+    &__second {
+      width: 90%;
+      height: 90%;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      visibility: hidden;
+      margin-top: -400px;
+    }
+    &__svg {
+      width: 367px;
+      height: 202px;
+    }
+    &__second-header {
+      margin: 16px auto;
+    }
+    &__continue {
+      height: 50px;
+      width: 100%;
+      color: $main-font-white;
+      background-color: rgba(232, 111, 84, 1);
+      border-radius: 8px;
+      margin-top: 14px;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .is-hidden {
+    opacity: 0;
+    display: none;
+    pointer-events: none;
+  }
+
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .modal {
+    width: 90%;
+    max-width: 480px;
+    height: 511px;
+    padding: 48px 32px;
+    &__text {
+      position: absolute;
+      margin-top: 0;
+      margin-bottom: 0;
+      top: 111px;
+      font-size: 16px;
+      width: 85%;
+    }
+    &__close-btn {
+      width: 24px;
+      height: 24px;
+      top: 18px;
+      right: 18px;
+    }
+    &__first-header {
+      top: 48px;
+      margin: 0;
+      font-size: 32px;
+    }
+    &__contact-form {
+      position: absolute;
+      top: 190px;
+      width: 85%;
+      &__label {
+        font-size: 14px;
+        margin-top: 0;
+      }
+      &_box {
+        width: 100%;
+        height: 49px;
+        font-size: 14px;
+        line-height: 1.22;
+        padding-left: 16px;
+        &:active {
+          border: 1px solid rgba(17, 17, 17, 0.7);
+        }
+        &:valid {
+          border: 1px solid;
+          border: 1px solid rgba(60, 188, 129, 1);
+
+          ~ .modal__contact-form_box__valid {
+            visibility: visible;
+          }
+        }
+        &__valid {
+          height: 20px;
+          width: 20px;
+          fill: rgba(60, 188, 129, 1);
+          visibility: hidden;
+        }
+        &__invalid {
+          position: absolute;
+          height: 20px;
+          width: 20px;
+          fill: rgba(231, 74, 59, 1);
+          transform: translate(-25px, 15px);
+          visibility: hidden;
+        }
+        &:invalid {
+          border: 1px solid rgba(231, 74, 59, 1);
+          ~ .modal__contact-form_box__invalid {
+            visibility: visible;
+          }
+        }
+      }
+      &__item {
+        margin-bottom: 4px;
+      }
+      &__btn {
+        height: 50px;
+        margin-top: 24px;
+        &:target .modal__second {
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

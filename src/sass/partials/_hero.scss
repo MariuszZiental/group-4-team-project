@@ -1,0 +1,139 @@
+section {
+  width: 100%;
+}
+.hero {
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  &__img {
+    position: absolute;
+    overflow: hidden;
+    display: flex;
+    width: 145px;
+    height: 274px;
+    top: 95px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 226px;
+    object-fit: none;
+    object-position: 58% 50%;
+    image-resolution: from-image;
+  }
+  &__header {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 300px;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 1.22;
+    text-align: center;
+  }
+  &__content {
+    position: absolute;
+    bottom: auto;
+    top: 190px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+  }
+  &__description {
+    margin-right: 70%;
+  }
+  &__icon {
+    width: 64px;
+    height: 76px;
+    fill: #000000;
+  }
+  &__btn {
+    border: none;
+    background-color: transparent;
+  }
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .hero {
+    justify-content: center;
+    display: flex;
+    &__img {
+      height: 636px;
+      width: 30%;
+      left: auto;
+      right: auto;
+      object-position: 55% 50%;
+    }
+    &__icon {
+      width: 145px;
+      height: 150px;
+      margin-left: 20px;
+    }
+    &__content {
+      top: 340px;
+      align-items: center;
+      width: 60%;
+      left: 20%;
+      right: 20%;
+    }
+    &__header {
+      position: absolute;
+      top: 560px;
+      font-size: 120px;
+      line-height: 1.22;
+    }
+    &__description {
+      font-size: 24px;
+      font-weight: 400;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .hero {
+    position: relative;
+    top: 0;
+    &__img {
+      width: 100%;
+      height: 878px;
+      border-radius: 0;
+      display: flex;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+    &__icon {
+      width: 166px;
+      height: 166px;
+      fill: $main-font-white;
+    }
+    &__header {
+      position: absolute;
+      top: 200px;
+
+      color: $main-font-white;
+      font-size: 160px;
+      line-height: 1.22;
+      font-weight: 400;
+      &::before {
+        width: 58px;
+        height: 0px;
+        border-radius: 8px;
+        border-color: $main-font-white;
+      }
+    }
+    &__content {
+      position: absolute;
+      margin-top: 132px+73px;
+
+      width: 900px;
+      display: inline-flex;
+    }
+    &__description {
+      color: $main-font-white;
+    }
+  }
+}
