@@ -22,9 +22,8 @@
   gap: 12px;
 
   @media screen and (max-width: 767px) {
-    padding: 0;
     padding-left: 16px;
-    padding-right: 14px;
+    padding-right: 16px;
   }
 }
 
@@ -73,6 +72,11 @@
 
   @media screen and (max-width: 767px) {
     display: flex;
+    margin: auto;
+    padding-left: 90px;
+    position: absolute;
+    top: 245px;
+    left: 45px;
   }
 
   @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
@@ -127,6 +131,7 @@
   @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
