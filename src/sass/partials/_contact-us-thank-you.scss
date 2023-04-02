@@ -82,7 +82,7 @@
         border: 1px solid;
         border: 1px solid rgba(60, 188, 129, 1);
 
-        ~ .modal__contact-form_box__valid {
+        ~ .modal_box__valid {
           visibility: visible;
         }
       }
@@ -105,7 +105,7 @@
       &:invalid {
         border: 1px solid rgba(231, 74, 59, 1);
 
-        ~ .modal__contact-form_box__invalid {
+        ~ .modal_box__invalid {
           visibility: visible;
         }
       }
@@ -229,7 +229,13 @@
         border: 1px solid;
         border: 1px solid rgba(60, 188, 129, 1);
 
-        ~ .modal__contact-form_box__valid {
+        ~ .modal_box__valid {
+          visibility: visible;
+        }
+      }
+      &:invalid {
+        border: 1px solid rgba(231, 74, 59, 1);
+        ~ .modal_box__invalid {
           visibility: visible;
         }
       }
@@ -246,12 +252,6 @@
         fill: rgba(231, 74, 59, 1);
         transform: translate(-25px, 15px);
         visibility: hidden;
-      }
-      &:invalid {
-        border: 1px solid rgba(231, 74, 59, 1);
-        ~ .modal__contact-form_box__invalid {
-          visibility: visible;
-        }
       }
     }
     &__item {
