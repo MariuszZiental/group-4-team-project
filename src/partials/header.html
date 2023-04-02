@@ -23,12 +23,11 @@
             <use href="images/svg/sprite.svg#icon-telephone-mobile"></use>
           </svg>
         </a>
-        <button type="button" class="menu-toggle js-open-menu">
+        <button type="button" class="toggleMenu js-open-menu">
           <svg viewBox="0 0 100 100">
-            <use href="images/svg/sprite.svg#icon-Burger"></use>
+            <use href="images/svg/sprite.svg#icon-burger-menu"></use>
           </svg>
         </button>
-        <include src="./partials/menu-mobile.html"></include>
       </div>
     </nav>
     <a href="tel:+48111111111">
@@ -38,3 +37,22 @@
     </a>
   </div>
 </header>
+
+<div class="menu-container js-menu-container" id="mobile-menu">
+  <ul class="menu--mobile">
+    <li>
+      <button type="button" class="js-close-menu">
+        <svg class="icon-close--mobile" viewBox="0 0 100 100">
+          <use href="images/svg/sprite.svg#icon-close"></use>
+        </svg>
+      </button>
+    </li>
+    <li>
+      <a href="./index.html">Anemone</a>
+    </li>
+    <li><a href="#about">About us</a></li>
+    <li><a href="#store">Store</a></li>
+    <li><a href="#delivery">Delivery</a></li>
+    <li><a href="#blog">Blog</a></li>
+  </ul>
+</div>

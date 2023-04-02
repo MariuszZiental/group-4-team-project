@@ -34,8 +34,8 @@
   }
 }
 .js-close-menu {
-  display: inline-block;
   background-color: $mobile-menu;
+  display: inline-block;
   align-self: flex-end;
   border: none;
   padding: 0;
@@ -43,8 +43,29 @@
   width: 24px;
   margin-top: 16px;
   margin-right: 16px;
+  z-index: 7;
   &:hover,
   &:focus {
     cursor: pointer;
+    background-color: $mobile-menu;
   }
+}
+
+.icon-close--mobile {
+  display: inline-block;
+  fill: white;
+  @extend %transition;
+  transition-property: fill;
+  &:hover,
+  &:focus {
+    fill: black;
+  }
+}
+
+span:after,
+span:before {
+  content: '\00a0\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+  width: 100px;
+  display: inline-block;
 }
