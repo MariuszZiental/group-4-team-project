@@ -8,6 +8,7 @@
     background-color: rgba($main-font-black, $alpha: 0.1);
   }
   .modal {
+    z-index: 20;
     position: absolute;
     top: 50%;
     left: 50%;

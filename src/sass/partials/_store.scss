@@ -48,7 +48,7 @@ section {
 }
 
 .store__price {
-  opacity: 60%;
+  color: rgba(0, 0, 0, 0.6);
   font-weight: 600;
   font-size: 12px;
   @media screen and (min-width: $tablet-breakpoint) {
