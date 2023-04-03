@@ -13,6 +13,7 @@ section {
   flex-wrap: wrap;
   gap: $grid-gap-mobile;
   & > li {
+    max-width: 600px;
     flex-basis: calc((100% - 16px) / 2);
     @media screen and (min-width: $tablet-breakpoint) {
       flex-basis: calc((100% - 32px) / 2);
