@@ -14,7 +14,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   min-width: 320px;
-  max-width: 480px;
+  max-width: 767px;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   body {
@@ -37,7 +37,7 @@ body {
 
 footer {
   min-width: 320px;
-  max-width: 480px;
+  max-width: 767px;
   padding-top: $footer-top-padding-mobile;
   padding-bottom: $footer-bottom-padding-mobile;
 }
