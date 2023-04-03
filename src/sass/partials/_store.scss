@@ -1,14 +1,14 @@
 li {
   list-style: none;
 }
-ul {
-  padding-left: 0;
-  margin: 10px 0 0 0;
-}
+
 section {
   font-family: Montserrat;
 }
+
 .store__list {
+  padding-left: 0;
+  margin: 10px 0 0 0;
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
@@ -31,11 +31,22 @@ section {
 .store__photo {
   width: 100%;
 }
+
 .store__description-name {
   display: inline-block;
   margin: 0;
   white-space: nowrap;
+  padding-bottom: 6px;
+  padding-top: 12px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-bottom: 8px;
+    padding-top: 16px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding-bottom: 4px;
+  }
 }
+
 .store__price {
   opacity: 60%;
   font-weight: 600;
@@ -47,10 +58,18 @@ section {
     font-size: 28px;
   }
 }
+
 .store__line {
   display: none;
+
   & > hr {
     margin-left: 0;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin-top: 15px;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      margin-top: 20px;
+    }
   }
   @media screen and (min-width: $tablet-breakpoint) {
     display: inline-block;
@@ -58,9 +77,27 @@ section {
     padding-left: 8px;
   }
 }
+
 .store__description {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: center;
+}
+
+.button__store {
+  display: flex;
+  width: 208px;
+  font-size: 20px;
+  margin: 32px auto 60px auto;
+  justify-content: center;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: 280px;
+    font-size: 28px;
+    margin: 60px auto 100px auto;
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
 }
