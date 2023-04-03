@@ -111,6 +111,7 @@
   width: 100%;
   margin: 0 auto;
   padding-bottom: $section-bottom-padding-mobile;
+  max-width: 1600px;
 }
 
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
