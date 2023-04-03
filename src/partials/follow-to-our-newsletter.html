@@ -1,1 +1,52 @@
-<section></section>
+<section>
+  <div class="blog__backdrop is-hidden" data-modal>
+    <div class="blog__modal">
+      <svg class="blog__modal__close-btn" width="18" height="18" data-modal-close>
+        <use href="./images/svg/sprite.svg#icon-close"></use>
+      </svg>
+      <div class="blog__modal-background">
+        <img
+          src="./images/jpg/newsletter/newsletter-bouquet-mobile.jpg"
+          srcset="
+            ./images/jpg/newsletter/newsletter-bouquet-tablet.jpg      588w,
+            ./images/jpg/newsletter/newsletter-bouquet-desktop.jpg     428w,
+            ./images/jpg/newsletter/newsletter-bouquet-mobile@2x.jpg   544w,
+            ./images/jpg/newsletter/newsletter-bouquet-tablet@2x.jpg  1176w,
+            ./images/jpg/newsletter/newsletter-bouquet-desktop@2x.jpg  856w
+          "
+          sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 480px) 272px, 100vw"
+          alt="Flower picture 6"
+        />
+      </div>
+      <div class="blog__modal-container">
+        <h3 class="blog__modal-header">Follow to our newsletter</h3>
+        <p class="blog__modal-text">
+          Be the first to get exclusive offers and the latest news on our product directy in your
+          box.
+        </p>
+        <form name="modal-form" class="blog__modal-form" autocomplete="on">
+          <label class="blog__modal-form__label">
+            Email
+            <input
+              class="blog__modal-form__input"
+              placeholder="Your mail"
+              pattern=".+@.+.com"
+              type="email"
+              name="email"
+              required
+            />
+            <svg class="blog__modal-form__input--valid">
+              <use href="./images/svg/sprite.svg#icon-accept"></use>
+            </svg>
+            <svg class="blog__modal-form__input--invalid">
+              <use href="./images/svg/sprite.svg#icon-error"></use>
+            </svg>
+          </label>
+          <button type="submit" class="button blog__modal-form__button" data-modal-close>
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
