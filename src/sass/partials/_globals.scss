@@ -24,6 +24,14 @@ body {
     max-width: 1279px;
   }
 }
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  body {
+    font-size: 16px;
+    line-height: 24px;
+    min-width: 768px;
+    max-width: 1279px;
+  }
+}
 @media (min-width: $desktop-breakpoint) {
   body {
     font-size: 16px;
@@ -157,7 +165,7 @@ h4 {
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   h4 {
-    font-size: 36px;
+    font-size: 32px;
     line-height: 44px;
   }
 }
