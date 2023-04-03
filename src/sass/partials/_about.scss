@@ -15,6 +15,8 @@
 @media screen and (max-width: 767px) {
   .about-description {
     margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1,22;
   }
 }
 @media screen and (min-width: 768px) {
@@ -45,11 +47,32 @@
   }
   .about-description {
     font-size: 22px;
-    line-height: 1,23;
+    line-height: 1,22;
     max-width: 510px;
   }
   .about-img {
     width: 632px;
     height: 344px;
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 1.2;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.title::after {
+  content: '';
+  flex-grow: 1;
+  border: 1px solid var(--secondary-bgc-page);
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    font-size: 44px;
+    line-height: 1.23;
+    gap: 16px;
   }
 }
