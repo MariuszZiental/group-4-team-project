@@ -1,67 +1,67 @@
 section {
   width: 100%;
 }
-.hero {
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  display: flex;
-  &__img {
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    width: 145px;
-    height: 274px;
-    top: 95px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 226px;
-    object-fit: none;
-    object-position: 58% 50%;
-  }
-  &__header {
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    top: 300px;
-    font-weight: 400;
-    font-size: 52px;
-    line-height: 1.22;
-    text-align: center;
-  }
-  &__content {
-    position: absolute;
-    bottom: auto;
-    top: 190px;
-    margin-left: auto;
-    margin-right: auto;
-    display: inline-flex;
-    align-items: center;
-    width: 80%;
-    justify-content: space-between;
-  }
-  &__description {
-    margin-right: 70%;
-  }
-  &__icon {
-    width: 64px;
-    height: 76px;
-    fill: #000000;
-    &-1,
-    &-2 {
-      display: none;
-    }
-  }
-  &__btn {
-    border: none;
-    background-color: transparent;
-  }
-}
-
-@media screen and (min-width: $tablet-breakpoint) {
+@media screen and (min-width: $mobile-breakpoint) {
   .hero {
+    align-items: center;
+    position: relative;
     justify-content: center;
     display: flex;
+
+    &__img {
+      position: absolute;
+      overflow: hidden;
+      display: flex;
+      width: 145px;
+      height: 274px;
+      top: 95px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 226px;
+      object-fit: cover;
+      object-position: 57% 50%;
+    }
+    &__header {
+      position: absolute;
+      margin-left: auto;
+      margin-right: auto;
+      top: 300px;
+      font-weight: 400;
+      font-size: 52px;
+      line-height: 1.22;
+      text-align: center;
+    }
+    &__content {
+      position: absolute;
+      bottom: auto;
+      top: 190px;
+      margin-left: auto;
+      margin-right: auto;
+      display: inline-flex;
+      align-items: center;
+      width: 80%;
+      justify-content: space-between;
+    }
+    &__description {
+      margin-right: 70%;
+    }
+    &__icon {
+      width: 64px;
+      height: 76px;
+      fill: #000000;
+      &-1,
+      &-2 {
+        display: none;
+      }
+    }
+    &__btn {
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+@media screen and (min-width: $tablet-breakpoint) {
+  .hero {
     &__img {
       height: 636px;
       width: 30%;
@@ -103,7 +103,6 @@ section {
 
 @media screen and (min-width: $desktop-breakpoint) {
   .hero {
-    position: relative;
     top: 0;
     &__img {
       width: 100%;
