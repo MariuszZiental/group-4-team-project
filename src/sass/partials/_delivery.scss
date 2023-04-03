@@ -44,7 +44,6 @@ h2 {
     flex-direction: column;
     justify-content: center;
     padding-top: 60px;
-    padding-left: 80px;
   }
   @media (min-width: $desktop-breakpoint) {
     display: flex;
@@ -83,12 +82,12 @@ h2 {
 }
 
 .delivery-item:last-child {
-  margin-bottom: 26px;
+  margin-bottom: 32px;
   @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
     margin-bottom: 40px;
   }
   @media (min-width: $desktop-breakpoint) {
-    margin-bottom: 60px;
+    margin-bottom: 69px;
   }
 }
 
@@ -124,17 +123,19 @@ h2 {
   width: 100%;
   margin: 0 auto;
   padding-bottom: $section-bottom-padding-mobile;
-  max-width: 1600px;
-}
+  height: 135px;
 
-@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
-  .delivery-image {
-    padding-bottom: $section-bottom-padding-tablet;
+  @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    .delivery-image {
+      height: 264px;
+      padding-bottom: $section-bottom-padding-tablet;
+    }
   }
-}
-@media (min-width: $desktop-breakpoint) {
-  .delivery-image {
-    padding-bottom: $section-bottom-padding-desktop;
+  @media (min-width: $desktop-breakpoint) {
+    .delivery-image {
+      height: 391px;
+      padding-bottom: $section-bottom-padding-desktop;
+    }
   }
 }
 
