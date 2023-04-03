@@ -13,6 +13,59 @@
   }
 }
 
+.footer__nav .footer__list {
+  @media screen and (max-width: 767px) {
+    padding-right: 20px;
+    padding-left: 16px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-left: 24px;
+    padding-right: 44px;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 0;
+  }
+}
+
+.footer__open-time .footer__list {
+  @media screen and (max-width: 767px) {
+    padding-left: 44px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-right: 44px;
+    padding-left: 31px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 0;
+  }
+}
+
+.footer__contacts .footer__list {
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-right: 64px;
+    padding-left: 44px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding: 0;
+  }
+}
+
 .footer__list {
   list-style-type: none;
 
@@ -21,8 +74,14 @@
   flex-wrap: wrap;
 
   @media screen and (max-width: 767px) {
+    padding: 0;
     padding-left: 16px;
-    padding-right: 16px;
+    margin: 0;
+  }
+
+  @media screen and (min-width: $tablet-breakpoint) {
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -34,10 +93,17 @@
 
   @media screen and (max-width: 767px) {
     font-size: 18px;
+    margin-top: 0;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
     font-size: 20px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 20px;
+    margin-bottom: 18px;
   }
 }
 
@@ -51,9 +117,15 @@
   font-size: 14px;
   line-height: 1.2;
   font-style: normal;
+  padding-bottom: 12px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 12px;
+  }
 
   @media screen and (min-width: $tablet-breakpoint) {
     font-size: 16px;
+    margin-bottom: 0;
   }
 }
 
@@ -83,25 +155,17 @@
 
   @media screen and (max-width: 767px) {
     display: flex;
-    margin: auto;
-    padding-left: 90px;
-    position: absolute;
-    top: 245px;
-    left: 45px;
+    margin: 0;
+    padding-top: 32px;
   }
 
   @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
-    padding-left: 46px;
-    margin-top: 0;
-    position: absolute;
-    top: 80px;
-    right: 40px;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   @media screen and (min-width: $desktop-breakpoint) {
-    position: absolute;
-    top: 95px;
-    right: 48px;
+    padding-left: 112px;
   }
 }
 .footer__list-icon {
@@ -110,12 +174,21 @@
   @media screen and (max-width: 767px) {
     display: flex;
     gap: 14px;
+    padding-left: 32px;
+    margin-bottom: 0px;
+    margin-top: 0px;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
     display: flex;
     flex-direction: column;
     gap: 14px;
+    margin-top: 0;
+    padding-left: 0;
+  }
+
+  @media screen and (min-width: $desktop-breakpoint) {
+    margin: 0;
   }
 }
 
@@ -134,26 +207,31 @@
 
   @media screen and (min-width: $desktop-breakpoint) {
     margin-left: 24px;
-    margin-top: 25px;
   }
 }
 
 .footer__main-section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   @media screen and (max-width: 767px) {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 320px;
+    flex-flow: row wrap;
+    margin: auto;
   }
 
   @media screen and (min-width: $tablet-breakpoint) {
     display: flex;
     flex-direction: row;
+    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop-breakpoint) {
     padding-left: 210px;
     display: flex;
     gap: 96px;
+    max-width: 1280px;
   }
 }
 
