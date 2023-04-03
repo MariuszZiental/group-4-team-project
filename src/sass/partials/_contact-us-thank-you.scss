@@ -75,11 +75,17 @@
       border: 1px solid rgba(215, 215, 215, 1);
       border-radius: 4px;
       margin-top: 0px;
+      &:placeholder-shown {
+        border: 1px solid rgba(215, 215, 215, 1);
+        ~ .modal_box__valid,
+        ~ .modal_box__invalid {
+          visibility: hidden;
+        }
+      }
       &:active {
         border: 1px solid rgba(17, 17, 17, 0.7);
       }
-      &:valid {
-        border: 1px solid;
+      &:not(:placeholder-shown):required:valid {
         border: 1px solid rgba(60, 188, 129, 1);
 
         ~ .modal_box__valid {
@@ -102,9 +108,8 @@
         visibility: hidden;
         transform: translate(-25px, 8px);
       }
-      &:invalid {
+      &:not(:placeholder-shown):invalid {
         border: 1px solid rgba(231, 74, 59, 1);
-
         ~ .modal_box__invalid {
           visibility: visible;
         }
@@ -222,11 +227,17 @@
       font-size: 14px;
       line-height: 1.22;
       padding-left: 16px;
-
+      &:placeholder-shown {
+        border: 1px solid rgba(215, 215, 215, 1);
+        ~ .modal_box__valid,
+        ~ .modal_box__invalid {
+          visibility: hidden;
+        }
+      }
       &:active {
         border: 1px solid rgba(17, 17, 17, 0.7);
       }
-      &:not(:placeholder-shown):valid {
+      &:not(:placeholder-shown):required:valid {
         border: 1px solid rgba(60, 188, 129, 1);
 
         ~ .modal_box__valid {
@@ -239,22 +250,23 @@
           visibility: visible;
         }
       }
-    }
-    &__valid {
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      fill: rgba(60, 188, 129, 1);
-      visibility: hidden;
-      transform: translate(-25px, 15px);
-    }
-    &__invalid {
-      position: absolute;
-      height: 20px;
-      width: 20px;
-      fill: rgba(231, 74, 59, 1);
-      transform: translate(-30px, 15px);
-      visibility: hidden;
+
+      &__valid {
+        height: 20px;
+        width: 20px;
+        fill: rgba(60, 188, 129, 1);
+        visibility: hidden;
+        transform: translate(370px, -55px);
+        display: flex;
+      }
+      &__invalid {
+        height: 20px;
+        width: 20px;
+        fill: rgba(231, 74, 59, 1);
+        transform: translate(370px, -55px);
+        visibility: hidden;
+        display: flex;
+      }
     }
 
     &__item {
