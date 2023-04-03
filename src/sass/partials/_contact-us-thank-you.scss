@@ -222,38 +222,41 @@
       font-size: 14px;
       line-height: 1.22;
       padding-left: 16px;
+
       &:active {
         border: 1px solid rgba(17, 17, 17, 0.7);
       }
-      &:valid {
-        border: 1px solid;
+      &:not(:placeholder-shown):valid {
         border: 1px solid rgba(60, 188, 129, 1);
 
         ~ .modal_box__valid {
           visibility: visible;
         }
       }
-      &:invalid {
+      &:not(:placeholder-shown):invalid {
         border: 1px solid rgba(231, 74, 59, 1);
         ~ .modal_box__invalid {
           visibility: visible;
         }
       }
-      &__valid {
-        height: 20px;
-        width: 20px;
-        fill: rgba(60, 188, 129, 1);
-        visibility: hidden;
-      }
-      &__invalid {
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        fill: rgba(231, 74, 59, 1);
-        transform: translate(-25px, 15px);
-        visibility: hidden;
-      }
     }
+    &__valid {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      fill: rgba(60, 188, 129, 1);
+      visibility: hidden;
+      transform: translate(-25px, 15px);
+    }
+    &__invalid {
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      fill: rgba(231, 74, 59, 1);
+      transform: translate(-30px, 15px);
+      visibility: hidden;
+    }
+
     &__item {
       margin-bottom: 4px;
     }
