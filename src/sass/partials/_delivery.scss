@@ -121,21 +121,17 @@ h2 {
 
 .delivery-image {
   width: 100%;
-  margin: 0 auto;
   padding-bottom: $section-bottom-padding-mobile;
-  height: 135px;
+  min-height: 135px;
 
   @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
-    .delivery-image {
-      height: 264px;
-      padding-bottom: $section-bottom-padding-tablet;
-    }
+    min-height: 264px;
+    padding-bottom: $section-bottom-padding-tablet;
   }
+
   @media (min-width: $desktop-breakpoint) {
-    .delivery-image {
-      height: 391px;
-      padding-bottom: $section-bottom-padding-desktop;
-    }
+    min-height: 391px;
+    padding-bottom: $section-bottom-padding-desktop;
   }
 }
 
