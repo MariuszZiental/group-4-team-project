@@ -1,159 +1,245 @@
-/* @media screen and (min-width: 240px) { */
-.blog__backdrop {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba($main-font-black, 0.1);
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-.blog__modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  opacity: 1;
-  width: 90%;
-  max-width: 272px;
-  height: 380px;
-  background-color: $main-font-white;
-  display: flex;
-  flex-direction: column;
-  display: flex;
-  &__close-btn {
+@media screen and (min-width: 240px) {
+  .blog-backdrop {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($main-font-black, 0.1);
+  }
+  .blog-modal {
     position: absolute;
-    top: 19px;
-    right: 19px;
-    cursor: pointer;
-    fill: $main-font-black;
-    width: 18px;
-    height: 18px;
-    font-size: 16px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    opacity: 1;
+    width: 90%;
+    max-width: 272px;
+    height: 357px;
+    background-color: $main-font-white;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    &__close-btn {
+      position: absolute;
+      top: 19px;
+      right: 19px;
+      cursor: pointer;
+      fill: $main-font-black;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      fill: $main-font-black;
+    }
+
+    &__header {
+      /*       position: absolute;
+ */
+      margin-bottom: 0;
+      font-size: 20px;
+      line-height: 1.2;
+      margin-top: 0;
+    }
+    &__form {
+      margin-top: 0;
+    }
+    /*   &__item {
+      margin-bottom: 0;
+    } */
+    &__label {
+      font-size: 12px;
+      color: rgba(92, 92, 92, 1);
+      margin-bottom: 8px;
+      margin-top: 0px;
+      text-align: left;
+    }
+    &__input {
+      position: relative;
+      width: 100%;
+      height: 35px;
+      font-size: 12px;
+      line-height: 1.22;
+      padding-left: 12px;
+      margin-bottom: 20px;
+      color: $main-font-black;
+      border: 1px solid $input-normal-state;
+      border-radius: $input-border-radius;
+      margin-top: 0px;
+      &:placeholder-shown {
+        border: 1px solid $input-normal-state;
+        ~ .blog-modal__input-valid,
+        ~ .blog-modal__input-invalid {
+          visibility: hidden;
+        }
+      }
+      &:active {
+        border: 1px solid $input-hover-state;
+      }
+      &:not(:placeholder-shown):required:valid {
+        border: 1px solid $input-accept-color;
+
+        ~ .blog-modal__input-valid {
+          visibility: visible;
+        }
+      }
+      &-valid {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        fill: $input-accept-color;
+        visibility: hidden;
+        transform: translate(-25px, 8px);
+      }
+      &-invalid {
+        position: absolute;
+        height: 20px;
+        width: 20px;
+        fill: $input-error-color;
+        visibility: hidden;
+        transform: translate(-25px, 8px);
+      }
+      &:not(:placeholder-shown):invalid {
+        border: 1px solid $input-error-color;
+        ~ .blog-modal__input-invalid {
+          visibility: visible;
+        }
+      }
+    }
+    /*     &__item {
+      margin-bottom: 0px;
+      margin-top: 0;
+    } */
+    &__button {
+      justify-content: center;
+      width: 100%;
+      height: 37px;
+      margin-top: 0px;
+      background-color: $button-pink-base;
+      border-radius: $button-modal-border-radius;
+      border: none;
+      font-weight: 600;
+      color: $main-font-white;
+      cursor: pointer;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: rgba(232, 111, 84, 1);
+      }
+    }
+
+    &__text {
+      justify-content: center;
+      display: flex;
+      color: rgba(92, 92, 92, 1);
+      margin-bottom: 0px;
+      font-size: 12px;
+      line-height: 1.22;
+    }
   }
 }
+.is-hidden {
+  opacity: 0;
+  display: none;
+  pointer-events: none;
+}
 
-.blog__modal-container {
-  padding-top: 18px;
-  padding-right: 16px;
-  padding-bottom: 28px;
-  padding-left: 16px;
+.blog-modal__container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 18px 16px 28px 16px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-.blog__modal-header {
-  font-size: 19px;
-  width: 90%;
-  line-height: 1.2;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-weight: 600;
-}
 
-.blog__modal-form__input {
-  width: 100%;
-}
+@media screen and (min-width: $tablet-breakpoint) {
+  .blog-modal {
+    width: 90%;
+    max-width: 480px;
+    height: 511px;
+    padding: 48px 32px;
+    &__text {
+      position: absolute;
+      margin-top: 0;
+      margin-bottom: 0;
+      top: 111px;
+      font-size: 16px;
+      width: 85%;
+    }
+    &__close-btn {
+      width: 24px;
+      height: 24px;
+      top: 18px;
+      right: 18px;
+    }
+    &__header {
+      margin: 0;
+      font-size: 32px;
+    }
+    &__form {
+      width: 85%;
+    }
+    &__label {
+      font-size: 14px;
+      margin-top: 0;
+      text-align: left;
+    }
+    &__input {
+      width: 100%;
+      height: 49px;
+      font-size: 14px;
+      line-height: 1.22;
+      padding-left: 16px;
+      &:placeholder-shown {
+        border: 1px solid $input-normal-state;
+        ~ .blog-modal__input-valid,
+        ~ .blog-modal__input-invalid {
+          visibility: hidden;
+        }
+      }
+      &:active {
+        border: 1px solid $input-hover-state;
+      }
+      &:not(:placeholder-shown):required:valid {
+        border: 1px solid $input-accept-color;
+        ~ .blog-modal__input-valid {
+          visibility: visible;
+        }
+      }
+      &:not(:placeholder-shown):invalid {
+        border: 1px solid $input-error-color;
+        ~ .blog-modal__input-invalid {
+          visibility: visible;
+        }
+      }
 
-.blog__modal-form__label {
-  text-align: left;
-}
+      &-valid {
+        height: 20px;
+        width: 20px;
+        fill: $input-accept-color;
+        visibility: hidden;
+        transform: translate(370px, -55px);
+        display: flex;
+      }
+      &-invalid {
+        height: 20px;
+        width: 20px;
+        fill: $input-error-color;
+        transform: translate(370px, -55px);
+        visibility: hidden;
+        display: flex;
+      }
+    }
 
-.blog__modal-form__button {
-  width: 100%;
-}
-
-.blog__modal-text {
-  color: #5c5c5c;
-}
-
-.blog > svg {
-  visibility: hidden;
-}
-
-/* MÓJ STARY KOD */
-
-/* .blog__modal {
-  position: absolute;
-  top: 20%;
-  left: 20%;
-  padding: 40px;
-  width: calc(100vw - 24px);
-  max-width: 272px;
-  min-height: 380px;
-  visibility: visible;
-  background-color: $main-font-white;
-
-  &__close {
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
-    background-color: $main-font-white;
-    color: $main-font-black;
-    cursor: pointer;
-
-    &:hover {
-      fill: $button-pink-hover;
+    &__label {
+      margin-bottom: 4px;
+    }
+    &__button {
+      height: 50px;
+      margin-top: 24px;
     }
   }
-
-
-
-.blog__modal__form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  &__item {
-    color: $main-font-black;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-    position: relative;
-  }
-
-  &__input {
-    outline: none;
-    border: 1px solid $main-font-black;
-    padding-left: 42px;
-    height: 40px;
-  }
 }
-
-@media screen and (min-width: $desktop-breakpoint) {
-  .blog__modal {
-    max-width: 528px;
-    min-height: 581px;
-  }
-}
-
-.blog__backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  opacity: 1;
-}
-
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-
-  & .blog__modal {
-    transform: translate(-50%, -50%) scale(0.25);
-  }
-} */
