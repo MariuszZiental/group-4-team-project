@@ -18,81 +18,81 @@
     margin: 0 auto;
     left: 50%;
     gap: 25px;
-    margin-top: 26px;
-    margin-bottom: 36px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     @media screen and (min-width: $tablet-breakpoint) {
       margin-top: 35px;
     }
     @media screen and (min-width: $tablet-breakpoint) {
       margin-top: 45.18px;
     }
+  }
 
-    &__icon {
-      display: inline-block;
-      width: 38.32px;
-      max-height: 7px;
-      @media screen and (min-width: $tablet-breakpoint) {
-        width: 46.75px;
+  &-subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &-button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 170px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    @media screen and (min-width: $tablet-breakpoint) {
+      width: 280px;
+      height: 64px;
+      font-size: 28px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+
+  &-gallery {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 32px;
+    gap: $grid-gap-mobile;
+    display: flex;
+    &__item {
+      flex-basis: calc((100% - 16px) / 2);
+      &:nth-child(n + 3) {
+        @media screen and (max-width: 1279px) {
+          display: none;
+        }
       }
-    }
-
-    &-subtitle {
-      text-align: center;
-      margin: 0 auto;
-    }
-
-    &-button {
-      display: flex;
-      margin: 0 auto;
-      margin-top: 24px;
-      width: 170px;
-      height: 40px;
-      justify-content: center;
-      align-items: center;
-      font-size: 18px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      @media screen and (min-width: $tablet-breakpoint) {
-        width: 280px;
-        height: 64px;
-        font-size: 28px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+      & > img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0;
       }
-    }
-
-    &-gallery {
-      list-style-type: none;
-      padding: 0;
-      margin: 0 auto;
-      margin-top: 32px;
-      gap: $grid-gap-mobile;
-      display: flex;
-      &__item {
-        flex-basis: calc((100% - 16px) / 2);
-        &:nth-child(n + 3) {
-          @media screen and (max-width: 1279px) {
-            display: none;
-          }
-        }
-        & > img {
-          width: 100%;
-          height: auto;
-          display: flex;
-          margin: 0;
-        }
-        &:nth-child(n + 4) {
-          @media screen and (min-width: $desktop-breakpoint) {
-            display: none;
-          }
-        }
+      &:nth-child(n + 4) {
         @media screen and (min-width: $desktop-breakpoint) {
-          flex-basis: calc((100% - 62px) / 3);
+          display: none;
         }
       }
       @media screen and (min-width: $desktop-breakpoint) {
-        gap: 31px;
+        flex-basis: calc((100% - 62px) / 3);
       }
     }
+    @media screen and (min-width: $desktop-breakpoint) {
+      gap: 31px;
+    }
+  }
+}
+
+.blog-slider__icon {
+  display: inline-block;
+  width: 38.32px;
+  max-height: 7px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: 46.75px;
   }
 }
