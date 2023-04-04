@@ -1,0 +1,107 @@
+li {
+  list-style: none;
+}
+
+section {
+  font-family: Montserrat;
+}
+
+.store__list {
+  padding-left: 0;
+  margin: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: $grid-gap-mobile;
+  & > li {
+    max-width: 600px;
+    flex-basis: calc((100% - 16px) / 2);
+    @media screen and (min-width: $tablet-breakpoint) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    gap: $grid-gap-desktop;
+    row-gap: 40px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    row-gap: 64px;
+  }
+}
+
+.store__photo {
+  width: 100%;
+}
+
+.store__description-name {
+  display: inline-block;
+  margin: 0;
+  white-space: nowrap;
+  padding-bottom: 6px;
+  padding-top: 12px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-bottom: 8px;
+    padding-top: 16px;
+    line-height: 39px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    padding-bottom: 4px;
+  }
+}
+
+.store__price {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop-breakpoint) {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+.store__line {
+  display: none;
+
+  & > hr {
+    margin-left: 0;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin-top: 15px;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      margin-top: 20px;
+    }
+  }
+  @media screen and (min-width: $tablet-breakpoint) {
+    display: inline-block;
+    width: 100%;
+    padding-left: 8px;
+  }
+}
+
+.store__description {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+}
+
+.button__store {
+  display: flex;
+  width: 208px;
+  font-size: 20px;
+  margin: 32px auto 60px auto;
+  justify-content: center;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: 280px;
+    font-size: 28px;
+    margin: 60px auto 100px auto;
+  }
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
