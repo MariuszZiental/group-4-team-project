@@ -41,6 +41,7 @@ section {
   @media screen and (min-width: $tablet-breakpoint) {
     padding-bottom: 8px;
     padding-top: 16px;
+    line-height: 39px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     padding-bottom: 4px;
@@ -51,11 +52,14 @@ section {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 600;
   font-size: 12px;
+  line-height: 15px;
   @media screen and (min-width: $tablet-breakpoint) {
     font-size: 24px;
+    line-height: 30px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     font-size: 28px;
+    line-height: 35px;
   }
 }
 
