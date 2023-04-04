@@ -1,48 +1,29 @@
-<section class="section">
-    <div class="container about-container">
-      <h2 class="about-title__line" id="about">About</h2>
-      <div class="about-wrapper">
+<section class="section" id="about">
+  <div class="section-title">
+    <h2>ABOUT</h2>
+    <hr class="section-line-between" />
+  </div>
+    <div class="about-wrapper">
         <p class="about-description">
           We are a minimalistic flower studio. We love people and flowers.
           Therefore, every day we give people the beauty and joy creating stylish
           and modern masterpieces. Every bouquet we create is unique as you are.
         </p>
-        <picture>
-          <source
-            media="(min-width: 1280px)"
-            srcset="
-              ./images/jpg/about/about-flower-desktop.jpg 1x,
-              ./images/jpg/about/about-flower-desktop@2x.jpg 2x,
-            "
-            type="image/jpg"
-          />
-          <source
-            media="(min-width: 768px)"
-            srcset="
-            ./images/jpg/about/about-flower-tablet.jpg 1x,
-            ./images/jpg/about/about-flower-tablet@2x.jpg 2x,
-            "
-            type="image/jpg"
-          />
-          <source
-          media="(min-width: 768px)"
-          srcset="
-          ./images/jpg/about/about-flower-mobile.jpg 1x,
-          ./images/jpg/about/about-flower-mobile@2x.jpg 2x,
-          "
-          type="image/jpg"
-        />
-          <img
-            class="about-img"
-            src="./images/jpg/about/about-flower-mobile.jpg"
+        <div >
+          <img class="about-image"
             alt="picture of flowers"
-            width="288"
-            height="178"
-            loading="lazy"
+            src="./images/jpg/about/about-flower-mobile.jpg"
+            srcset="
+              ./images/jpg/about/about-flower-mobile.jpg      320w,
+              ./images/jpg/about/about-flower-mobile@2x.jpg   640w,
+              ./images/jpg/about/about-flower-tablet.jpg      768w,
+              ./images/jpg/about/about-flower-tablet@2x.jpg  1536w,
+              ./images/jpg/about/about-flower-desktop.jpg    1280w,
+              ./images/jpg/about/about-flower-desktop@2x.jpg 2560w
+            "
+            sizes="(min-width: 1280px) 1280px, (min-width: 768px) 768px, (min-width: 480px) 320px, 100vw"
           />
-        </picture>
+        </div>
+        </div>
       </div>
-    </div>
   </section>
-  
-  
