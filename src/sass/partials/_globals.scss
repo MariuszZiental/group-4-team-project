@@ -52,7 +52,8 @@ header {
 }
 @media (min-width: $desktop-breakpoint) {
   header {
-    margin-bottom: 63px;
+    margin-bottom: 0px;
+    z-index: 998;
   }
 }
 
