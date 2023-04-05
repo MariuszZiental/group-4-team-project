@@ -61,10 +61,11 @@ section {
     &__btn {
       border: none;
       background-color: transparent;
-      & :hover {
+      &:hover {
         background-color: transparent;
+        fill: $button-pink-hover;
       }
-      & :focus {
+      &:focus {
         background-color: transparent;
       }
     }
