@@ -20,6 +20,7 @@ section {
   display: flex;
   flex-wrap: wrap;
   gap: $grid-gap-mobile;
+  justify-content: space-around;
   & > li {
     max-width: 600px;
     flex-basis: calc((100% - 16px) / 2);
