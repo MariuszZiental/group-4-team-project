@@ -39,7 +39,7 @@ section {
     }
     &__content {
       position: absolute;
-      bottom: auto;
+      // bottom: auto;
       top: 90px;
       margin-left: auto;
       margin-right: auto;
@@ -118,10 +118,9 @@ section {
 }
 @media screen and (min-width: $desktop-breakpoint) {
   .hero {
-    top: -57px;
+    top: 0;
     padding-left: 0;
     padding-right: 0;
-
     &__img {
       position: relative;
       width: 100%;
@@ -162,7 +161,7 @@ section {
     }
     &__content {
       position: absolute;
-      margin-top: 200px+34px + 195px;
+      margin-top: 132px+73px;
       width: 900px;
       display: inline-flex;
     }
