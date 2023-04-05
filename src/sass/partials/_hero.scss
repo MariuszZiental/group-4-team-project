@@ -57,13 +57,18 @@ section {
       &-2 {
         display: none;
       }
+      &:hover {
+        fill: $button-pink-hover;
+      }
+      &:focus {
+        fill: $button-pink-hover;
+      }
     }
     &__btn {
       border: none;
       background-color: transparent;
       &:hover {
         background-color: transparent;
-        fill: $button-pink-hover;
       }
       &:focus {
         background-color: transparent;
@@ -75,7 +80,7 @@ section {
   .hero {
     &__img {
       height: 636px;
-      width: 30%;
+      width: 50%;
       left: auto;
       right: auto;
       object-position: 55% 50%;
@@ -93,14 +98,14 @@ section {
       }
     }
     &__content {
-      top: 340px;
+      top: 230px;
       align-items: center;
       width: 49px+450px+76px+145px;
       justify-content: space-between;
     }
     &__header {
       position: absolute;
-      top: 560px;
+      top: 480px;
       font-size: 120px;
       line-height: 1.22;
     }

@@ -40,6 +40,21 @@ body {
     max-width: 1600px;
   }
 }
+/*---   space   ---*/
+
+header {
+  margin-bottom: 0;
+}
+@media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+  header {
+    margin-bottom: 37px;
+  }
+}
+@media (min-width: $desktop-breakpoint) {
+  header {
+    margin-bottom: 63px;
+  }
+}
 
 /*---   space   ---*/
 
