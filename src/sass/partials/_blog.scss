@@ -1,0 +1,96 @@
+.blog {
+  padding-top: $section-top-padding-mobile;
+  padding-bottom: $section-bottom-padding-mobile;
+  @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
+    padding-top: $section-top-padding-tablet;
+    padding-bottom: $section-bottom-padding-tablet;
+  }
+  @media (min-width: $desktop-breakpoint) {
+    padding-top: $section-top-padding-desktop;
+    padding-bottom: $section-bottom-padding-desktop;
+  }
+  &-slider {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 26px;
+    margin-bottom: 36px;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin-top: 35px;
+      margin-bottom: 45px;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      margin-top: 45.18px;
+      margin-bottom: 51.73px;
+    }
+  }
+  &-subtitle {
+    text-align: center;
+    margin: 0 auto;
+  }
+  &-button {
+    display: flex;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 170px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    cursor: pointer;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin-top: 32px;
+      width: 280px;
+      height: 64px;
+      font-size: 28px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  &-gallery {
+    list-style-type: none;
+    padding: 0;
+    margin: 32px auto 0;
+    gap: $grid-gap-mobile;
+    display: flex;
+    @media screen and (min-width: $tablet-breakpoint) {
+      margin-top: 60px;
+      gap: $grid-gap-tablet;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      margin-top: 122px;
+    }
+    &__item {
+      flex-basis: calc((100% - 16px) / 2);
+      &:nth-child(n + 3) {
+        @media screen and (max-width: 1279px) {
+          display: none;
+        }
+      }
+      & > img {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0;
+      }
+      &:nth-child(n + 4) {
+        @media screen and (min-width: $desktop-breakpoint) {
+          display: none;
+        }
+      }
+      @media screen and (min-width: $desktop-breakpoint) {
+        flex-basis: calc((100% - 62px) / 3);
+      }
+    }
+  }
+}
+.icon__slider {
+  display: inline-block;
+  width: 38.32px;
+  max-height: 7px;
+  @media screen and (min-width: $tablet-breakpoint) {
+    width: 46.75px;
+  }
+}
