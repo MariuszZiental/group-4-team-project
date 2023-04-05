@@ -2,7 +2,7 @@
   "name": "group-4-team-project",
   "version": "1.1.0",
   "description": "",
-  "homepage": "https://joannamikusinskanowak.github.io/group-4-team-project",
+  "homepage": "https://mariuszziental.github.io/group-4-team-project",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /group-4-team-project/"
