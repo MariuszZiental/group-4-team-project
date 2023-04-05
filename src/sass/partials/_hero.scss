@@ -124,10 +124,11 @@ section {
       height: 878px;
       border-radius: 0;
       display: flex;
-      top: 0;
+      top: -100;
       left: 0;
       object-fit: cover;
       object-position: 50% 50%;
+
     }
     &__icon {
       width: 166px;
