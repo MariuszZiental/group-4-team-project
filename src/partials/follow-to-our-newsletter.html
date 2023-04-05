@@ -1,1 +1,62 @@
-<section></section>
+<section>
+  <div class="blog-backdrop is-hidden" data-modal>
+    <div class="blog-modal">
+      <div class="blog-modal__image">
+        <svg class="blog-modal__close-btn" data-modal-close>
+          <use href="./images/svg/sprite.svg#icon-close"></use>
+        </svg>
+        <img
+          src="./images/jpg/newsletter/newsletter-bouquet-mobile.jpg"
+          srcset="
+              ./images/jpg/newsletter/newsletter-bouquet-mobile.jpg   272w
+              ./images/jpg/newsletter/newsletter-bouquet-mobile@2x.jpg   544w,
+              ./images/jpg/newsletter/newsletter-bouquet-tablet.jpg      588w,
+              ./images/jpg/newsletter/newsletter-bouquet-tablet@2x.jpg  1176w,
+              ./images/jpg/newsletter/newsletter-bouquet-desktop.jpg     428w,
+              ./images/jpg/newsletter/newsletter-bouquet-desktop@2x.jpg  856w
+            "
+          sizes="(min-width: 1280px) 428px, (min-width: 768px) 588px, (min-width: 480px) 272px, 100vw"
+          alt="Flower picture 6"
+        />
+        <img
+          src="./images/jpg/newsletter/newsletter-bouquet-mobile.jpg"
+          srcset="
+            ./images/jpg/newsletter/newsletter-bouquet-desktop.jpg    428w,
+            ./images/jpg/newsletter/newsletter-bouquet-desktop@2x.jpg 856w
+          "
+          sizes="(min-width: 1280px) 428px, 100vw"
+          alt="Flower picture 6"
+        />
+      </div>
+      <div class="blog-modal__container">
+        <h3 class="blog-modal__header">Follow to our newsletter</h3>
+        <p class="blog-modal__text">
+          Be the first to get exclusive offers and the latest news on our product directy in your
+          box.
+        </p>
+        <form name="modal-form" class="blog-modal__form" autocomplete="on">
+          <label class="blog-modal__label">
+            Email
+            <input
+              class="blog-modal__input"
+              placeholder="Your email"
+              pattern=".+@.+.com"
+              type="email"
+              name="email"
+              required
+            />
+            <svg class="blog-modal__input-valid">
+              <use href="./images/svg/sprite.svg#icon-accept"></use>
+            </svg>
+            <svg class="blog-modal__input-invalid">
+              <use href="./images/svg/sprite.svg#icon-error"></use>
+            </svg>
+          </label>
+          <button type="submit" class="button blog-modal__button" data-modal-close>
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

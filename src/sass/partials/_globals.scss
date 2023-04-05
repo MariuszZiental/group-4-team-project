@@ -69,24 +69,25 @@ footer {
 /*---   space   ---*/
 
 section {
-  width: 100%;
+  width: 288px;
   margin: 0 auto;
   padding-left: $section-side-padding-mobile;
   padding-right: $section-side-padding-mobile;
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   section {
+    width: 720px;
     padding-left: $section-side-padding-tablet;
     padding-right: $section-side-padding-tablet;
   }
 }
 @media (min-width: $desktop-breakpoint) {
   section {
+    width: 1232px;
     padding-left: $section-side-padding-desktop;
     padding-right: $section-side-padding-desktop;
   }
 }
-
 /*---   space   ---*/
 
 .container {
