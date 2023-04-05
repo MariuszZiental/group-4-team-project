@@ -19,13 +19,13 @@ section {
       border-radius: 226px;
       object-fit: cover;
       object-position: 57% 50%;
+      margin-bottom: 106px;
     }
     &__header {
       cursor: default;
       position: absolute;
       margin-left: auto;
       margin-right: auto;
-      margin-bottom: 100px;
       top: 205px;
       font-weight: 400;
       font-size: 52px;
@@ -40,7 +40,7 @@ section {
     &__content {
       position: absolute;
       // bottom: auto;
-      // top: 190px;
+      top: 90px;
       margin-left: auto;
       margin-right: auto;
       display: inline-flex;
@@ -61,6 +61,9 @@ section {
     &__btn {
       border: none;
       background-color: transparent;
+      & :hover {
+        background-color: transparent;
+      }
     }
   }
 }
