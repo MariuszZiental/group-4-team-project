@@ -1,35 +1,35 @@
 <section>
-    <div class="container">
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <svg class="modal__close-btn" width="18" height="18" data-modal-close>
-              <use   href="/src/images/svg/icons_hero-contact.svg#icon-Vector-1"></use></svg>
-              <div class="modal__first">
-            <h3 class="modal__first-header">Contact us</h3>
-            <p class="modal__text">If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
-            <form class="modal__contact-form" name="modal__contact-form" autocomplete="on">
-              <label class="modal__item">
-                <p class="modal__label">Name</p>
-                <input class="modal_box" pattern="[A-Za-z]" placeholder="Your name" type="text" type="name" required /> 
-                <svg class="modal_box__valid"><use href="/src/images/svg/icons_hero-contact.svg#icon-Vector-2"></use></svg>
-                <svg class="modal_box__invalid"><use href="/src/images/svg/icons_hero-contact.svg#icon-Error-logo"></use></svg>
-              </label>
-              <label class="modal__item">
-                <p class="modal__label">Email</p>
-                <input class="modal_box mail" placeholder="Your mail" type="mail" pattern=".+@.+.com"  name="mail" required />
-                <svg class="modal_box__valid"><use href="/src/images/svg/icons_hero-contact.svg#icon-Vector-2"></use></svg>
-                <svg class="modal_box__invalid"><use href="/src/images/svg/icons_hero-contact.svg#icon-Error-logo"></use></svg>
-              </label>
-          <button type="submit" class="modal__send">Send</button>
-            </div>
-            <div class="modal__second">
-  <svg class="modal_svg"><use href="/src/images/svg/icons_hero-contact.svg#icon-plants"></use></svg>
-              <h3 class="modal__second-header">Thank you!</h3>
-              <p class="modal__text">We have received your contact details and will reach you soon.</p>
-              <button type="button" class="modal__continue">Continue</button data-modal-close>
-            </div>
-            </div>
-      </div>
-      </div>
-      <script src="/src/contact.js"></script>
+  <div class="container">
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <svg class="modal__close-btn" width="18" height="18" data-modal-close>
+            <use   href="/src/images/svg/sprite.svg#icon-close"></use></svg>
+            <div class="modal__first">
+          <h3 class="modal__first-header">Contact us</h3>
+          <p class="modal__text">If you have any additional questions or you want to clarify something before you make an order please fill in your contact details. We will call you back. </p>
+          <form class="modal__contact-form" name="modal__contact-form" autocomplete="on">
+            <label class="modal__item">
+              <p class="modal__label">Name</p>
+              <input class="modal_box" placeholder="Your name" type="text" type="name" required />
+              <svg class="modal_box__valid"><use href="/src/images/svg/sprite.svg#icon-accept"></use></svg>
+              <svg class="modal_box__invalid"><use href="/src/images/svg/sprite.svg#icon-error"></use></svg>
+            </label>
+            <label class="modal__item">
+              <p class="modal__label">Email</p>
+              <input class="modal_box mail" placeholder="Your mail" type="mail" pattern=".+@.+.com"  name="mail" required />
+              <svg class="modal_box__valid"><use href="/src/images/svg/sprite.svg#icon-accept"></use></svg>
+              <svg class="modal_box__invalid"><use href="/src/images/svg/sprite.svg#icon-error"></use></svg>
+            </label>
+        <button type="submit" class="modal__send">Send</button>
+          </div>
+          <div class="modal__second">
+<svg class="modal_svg"><use href="/src/images/svg/sprite.svg#icon-plants"></use></svg>
+            <h3 class="modal__second-header">Thank you!</h3>
+            <p class="modal__text">We have received your contact details and will reach you soon.</p>
+            <button type="button" class="modal__continue">Continue</button data-modal-close>
+          </div>
+          </div>
+    </div>
+    </div>
+      <script src="/src/js/modal.js"></script>
 </section>
