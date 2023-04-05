@@ -120,15 +120,15 @@ section {
   .hero {
     top: 0;
     &__img {
+      position: relative;
       width: 100%;
       height: 878px;
       border-radius: 0;
       display: flex;
-      top: -100;
+      top: 0;
       left: 0;
       object-fit: cover;
       object-position: 50% 50%;
-
     }
     &__icon {
       width: 166px;
