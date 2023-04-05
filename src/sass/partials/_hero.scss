@@ -125,11 +125,12 @@ section {
       height: 878px;
       border-radius: 0;
       display: flex;
-      top: 0;
-      left: 0;
+      top: -57;
+      left: -24;
+      right: -24;
       object-fit: cover;
       object-position: 50% 50%;
-      margin-bottom: 200px;
+      bottom: 200px;
     }
     &__icon {
       width: 166px;
