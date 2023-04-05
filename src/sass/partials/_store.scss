@@ -1,3 +1,10 @@
+.section__store {
+  padding-top: $section-top-padding-mobile;
+  @media screen and (min-width: $tablet-breakpoint) {
+    padding-top: $section-top-padding-tablet;
+  }
+}
+
 li {
   list-style: none;
 }
@@ -7,8 +14,9 @@ section {
 }
 
 .store__list {
+  padding-top: 30px;
   padding-left: 0;
-  margin: 10px 0 0 0;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   gap: $grid-gap-mobile;
@@ -22,9 +30,11 @@ section {
   @media screen and (min-width: $tablet-breakpoint) {
     gap: $grid-gap-desktop;
     row-gap: 40px;
+    padding-top: 58px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     row-gap: 64px;
+    padding-top: 78px;
   }
 }
 
