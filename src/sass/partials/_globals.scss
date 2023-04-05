@@ -14,7 +14,7 @@ body {
   min-height: 100%;
   margin: 0 auto;
   min-width: 320px;
-  max-width: 480px;
+  max-width: 767px;
 }
 @media (min-width: $mobile-breakpoint) and (max-width: 767px) {
   body {
