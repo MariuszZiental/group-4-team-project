@@ -233,7 +233,8 @@
   }
 
   @media screen and (min-width: $desktop-breakpoint) {
-    padding-left: 210px;
+    padding-left: 100px;
+    padding-right: 100px;
     display: flex;
     gap: 96px;
     max-width: 1280px;
