@@ -8,10 +8,16 @@
     flex-wrap: wrap;
   }
 
-  @media screen and (min-width: $tablet-breakpoint) {
+  @media screen and (min-width: $tablet-breakpoint) and (max-width: 1279px) {
     display: flex;
   }
+  @media screen and (min-width: $desktop-breakpoint) {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
+ 
+
 
 .footer__nav .footer__list {
   @media screen and (max-width: 767px) {
