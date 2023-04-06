@@ -20,6 +20,7 @@ body {
     line-height: 20px;
     min-width: 480px;
     max-width: 767px;
+    margin: 0 auto;
   }
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
@@ -28,6 +29,7 @@ body {
     line-height: 24px;
     min-width: 768px;
     max-width: 1279px;
+    margin: 0 auto;
   }
 }
 @media (min-width: $desktop-breakpoint) {
