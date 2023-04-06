@@ -64,8 +64,8 @@
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
-    padding-right: 64px;
-    padding-left: 44px;
+    padding-right: 44px;
+    padding-left: 24px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     padding: 0;
@@ -157,6 +157,7 @@
 }
 
 .footer__icon {
+  display: none;
   stroke: white;
 
   @media screen and (max-width: 767px) {
@@ -216,6 +217,16 @@
     margin-left: 24px;
   }
 }
+
+.footer__icon--mobile {
+  width: 28px;
+  height: 28px;
+
+@media screen and (min-width: $tablet-breakpoint) and (max-width: 1600px) {
+    display: none;
+  }
+}
+
 
 .footer__main-section {
   display: flex;
