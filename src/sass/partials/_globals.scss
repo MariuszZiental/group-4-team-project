@@ -35,7 +35,7 @@ body {
     font-size: 16px;
     line-height: 27px;
     min-width: 1280px;
-    max-width: 1600px;
+    max-width: 2600px;
   }
 }
 /*---   space   ---*/
@@ -75,7 +75,7 @@ footer {
 @media (min-width: $desktop-breakpoint) {
   footer {
     min-width: 1280px;
-    max-width: 1600px;
+    max-width: 2600px;
     padding-top: $footer-top-padding-desktop;
     padding-bottom: $footer-bottom-padding-desktop;
   }
