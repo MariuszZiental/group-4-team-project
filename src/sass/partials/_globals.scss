@@ -62,6 +62,7 @@ header {
 /*---   space   ---*/
 
 footer {
+  margin: 0 auto;
   min-width: 320px;
   max-width: 767px;
   padding-top: $footer-top-padding-mobile;
@@ -69,6 +70,7 @@ footer {
 }
 @media (min-width: $tablet-breakpoint) and (max-width: 1279px) {
   footer {
+    margin: 0 auto;
     min-width: 768px;
     max-width: 1279px;
     padding-top: $footer-top-padding-tablet;
@@ -77,6 +79,7 @@ footer {
 }
 @media (min-width: $desktop-breakpoint) {
   footer {
+    margin: 0 auto;
     min-width: 1280px;
     max-width: 1600px;
     padding-top: $footer-top-padding-desktop;
