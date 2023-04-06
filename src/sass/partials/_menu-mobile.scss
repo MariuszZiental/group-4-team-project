@@ -4,10 +4,9 @@
   flex-direction: column;
   justify-content: space-between;
   left: -100%;
+  bottom: 0px;
   width: 100%;
   height: 100%;
-  width: 100vw;
-  height: 100vh;
   background-color: $mobile-menu;
   z-index: 4;
   transition: transform 250ms ease-in-out;
@@ -47,6 +46,7 @@
   }
 }
 .js-close-menu {
+  z-index: 5;
   display: visible;
   background-color: $mobile-menu;
   display: inline-block;
