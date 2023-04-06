@@ -11,12 +11,24 @@ a {
 }
 
 .icon-logo {
-  display: block;
-  width: 45px;
-  height: 35px;
-  @media screen and (min-width: $tablet-breakpoint) {
-    width: 72px;
-    height: 57px;
+  &--mobile {
+    height: 35px;
+    fill: black;
+    display: inline-block;
+    @media screen and (min-width: $tablet-breakpoint) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+    @media screen and (min-width: $tablet-breakpoint) {
+      display: inline-block;
+      height: 57px;
+    }
+    @media screen and (min-width: $desktop-breakpoint) {
+      fill: white;
+    }
   }
 }
 
@@ -28,7 +40,7 @@ a {
   display: flex;
   height: 35px;
   justify-content: space-between;
-  padding: 16px 16px 0 16px;
+  padding-top: 16px;
   & > a {
     width: 22px;
     display: none;
@@ -38,7 +50,7 @@ a {
   }
   @media screen and (min-width: $tablet-breakpoint) {
     height: 57px;
-    padding: 24px 24px 0 24px;
+    padding-top: 24px;
   }
   @media screen and (min-width: $desktop-breakpoint) {
     padding-top: 28px;
@@ -66,6 +78,14 @@ a {
   }
   @media screen and (min-width: $desktop-breakpoint) {
     gap: 48px;
+    & > li > a {
+      color: white;
+    }
+  }
+}
+.contact__header--desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    fill: white;
   }
 }
 
