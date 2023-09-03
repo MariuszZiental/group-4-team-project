@@ -1,4 +1,5 @@
 /*globals*/
+
 ul {
   padding-left: 0;
 }
@@ -21,7 +22,14 @@ a {
   }
 
   &--desktop {
+    &:hover,
+    &:focus {
+      fill: black;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: fill;
+    }
     display: none;
+
     @media screen and (min-width: $tablet-breakpoint) {
       display: inline-block;
       height: 57px;
@@ -80,12 +88,24 @@ a {
     gap: 48px;
     & > li > a {
       color: white;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color;
+      &:hover,
+      &:focus {
+        color: black;
+      }
     }
   }
 }
 .contact__header--desktop {
   @media screen and (min-width: $desktop-breakpoint) {
     fill: white;
+    &:hover,
+    &:focus {
+      fill: black;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: fill;
+    }
   }
 }
 

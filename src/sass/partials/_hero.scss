@@ -53,6 +53,7 @@ section {
       width: 64px;
       height: 76px;
       fill: #000000;
+
       &-3,
       &-2 {
         display: none;
@@ -67,11 +68,19 @@ section {
     &__btn {
       border: none;
       background-color: transparent;
-      &:hover {
-        background-color: transparent;
-      }
+      &:hover,
       &:focus {
         background-color: transparent;
+        animation: loading 3s linear infinite;
+        @keyframes loading {
+          0% {
+            transform: rotate(0);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+        //background-color: transparent;
       }
     }
   }
