@@ -76,6 +76,14 @@ a {
   }
 }
 .navbar__list {
+  & > li > a {
+    &:hover,
+    &:focus {
+      color: $button-pink-hover;
+      transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: color;
+    }
+  }
   align-items: center;
   justify-content: space-between;
   display: none;
@@ -98,6 +106,12 @@ a {
   }
 }
 .contact__header--desktop {
+  &:hover,
+  &:focus {
+    fill: $button-pink-hover;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: fill;
+  }
   @media screen and (min-width: $desktop-breakpoint) {
     fill: white;
     &:hover,

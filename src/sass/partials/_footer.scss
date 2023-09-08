@@ -76,6 +76,10 @@
   font-weight: 700;
   line-height: 1.2;
   font-style: normal;
+  &:hover,
+  &:focus {
+    color: $button-pink-hover;
+  }
   @media screen and (max-width: 767px) {
     font-size: 18px;
     margin-top: 0;
@@ -115,6 +119,10 @@
 .footer__link {
   text-decoration: none;
   color: $main-font-white;
+  &:hover,
+  &:focus {
+    color: $button-pink-hover;
+  }
   @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
@@ -160,10 +168,18 @@
   }
 }
 .footer__icon-item {
+  &:hover,
+  &:focus {
+    fill: $button-pink-hover;
+  }
   width: 28px;
   height: 28px;
 }
 .footer__icon-logo {
+  &:hover,
+  &:focus {
+    fill: $button-pink-hover;
+  }
   fill: $main-font-white;
   @media screen and (max-width: 1279px) {
     display: none;
